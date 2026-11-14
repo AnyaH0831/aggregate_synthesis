@@ -1,2 +1,2 @@
-synthetic_rows,pumf_rows,weighted_test_population,auc_published_synthetic,auc_pumf_train
-5179130,139495,1033319.0924278228,0.6197789210268307,0.6197789210268307
+seed,age_bands,weighting,rounding_assumption,solver_status,solver_message,synthetic_rows,pumf_rows,weighted_test_population,auc_published_synthetic,auc_pumf_train,max_absolute_cell_rate_difference,joint_tvd_28_cells,empty_or_zero_weight_test_cells
+2021,15-24|25-34|35-44|45-54|55-64|65-74|75+,WEIGHT for PUMF baseline and held-out evaluation only,conservative reported +/- 5; no sampling uncertainty,0,Optimization terminated successfully. (HiGHS Status 7: Optimal),5179130,139495,1033319.0924278228,0.6236580154244611,0.6236580154244611,0.02462825303373327,0.012219968406873113,0

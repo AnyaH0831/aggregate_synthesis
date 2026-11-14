@@ -114,7 +114,9 @@ def census(data_dir="data", filename="data_donnees_2021_ind.csv"):
     treats each sampled row as one person.  We keep persons aged 15+ in CMA 535,
     drop Census nonresponse codes, and use ``LFACT`` 1 or 2 (employed) as ``y``.
     ``AGEGRP`` 6--21 are the 15+ codes; ``Gender=1`` is Woman+ and ``Gender=2``
-    is Man+.
+    is Man+. ``MARSTH`` 2 or 3 means married or living common-law; the
+    education and tenure filters exclude missing/nonresponse and band-housing
+    records rather than treating them as population categories.
     """
     path = os.path.join(data_dir, filename)
     columns = ["CMA", "AGEGRP", "Gender", "HDGREE", "MARSTH", "TENUR", "LFACT"]
@@ -133,7 +135,7 @@ def census(data_dir="data", filename="data_donnees_2021_ind.csv"):
     if not chunks:
         raise ValueError(f"No valid Toronto Census rows found in {path}")
     d = pd.concat(chunks, ignore_index=True)
-    age = pd.cut(d["AGEGRP"], [5, 7, 9, 11, 13, 15, 21], labels=False)
+    age = pd.cut(d["AGEGRP"], [5, 8, 10, 12, 14, 16, 21], labels=False)
     education = np.select(
         [d["HDGREE"].isin([1, 2]), d["HDGREE"].isin([3, 4, 5, 6])],
         [0, 1],
@@ -143,7 +145,7 @@ def census(data_dir="data", filename="data_donnees_2021_ind.csv"):
         "age": age,
         "sex": (d["Gender"] == 2).astype(int),
         "education": education,
-        "married": d["MARSTH"].isin([1, 2]).astype(int),
+        "married": d["MARSTH"].isin([2, 3]).astype(int),
         "tenure": (d["TENUR"] == 1).astype(int),
         "y": d["LFACT"].isin([1, 2]).astype(int),
     }).astype(int).reset_index(drop=True)

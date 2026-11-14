@@ -118,6 +118,10 @@ python experiments/e04_table_selection_population.py --datasets census
 python experiments/e10_auc_certificate.py --datasets census
 ```
 
+For regenerated control outputs, use a separate directory such as
+`results/census_control/`; these five-feature experiments construct tables
+from PUMF rows and must not be conflated with the published-input pilot.
+
 The supplied published Toronto table is a labour-status/age/gender reference
 but does not align with the loader's full feature set, so direct published-table
 evaluation is a stretch goal.
@@ -128,13 +132,23 @@ The small published-table pilot uses only that Toronto CSV for fitting:
 python experiments/census_published_pilot.py
 ```
 
-It uses disjoint 15--24, 25--34, 35--44, 45--54, 55--64, 65--74 and 75+
-bands, checks the `Employed`, `Unemployed`, `Not in the labour force`, and
-total rows together under conservative StatCan random-rounding intervals
-`[reported - 5, reported + 5]`, and trains on the resulting synthetic rows.
-The PUMF is used only for the weighted held-out evaluation and a separate
-weighted PUMF-training baseline. Results are written to
-`results/census_published_pilot.csv`.
+It uses disjoint 15--24 (`AGEGRP` 6--8), 25--34 (9--10), 35--44 (11--12),
+45--54 (13--14), 55--64 (15--16), 65--74 (17--18) and 75+ (19--21) bands.
+It checks the `Employed`, `Unemployed`, `Not in the labour force`, and
+independently rounded total rows together with solver status under conservative
+StatCan random-rounding intervals `[reported - 5, reported + 5]`. Because these
+are weighted estimates, this is explicitly conservative rather than an exact
+per-cell interval; it includes no sampling uncertainty. The PUMF is used only
+for the weighted held-out evaluation and a separate weighted PUMF-training
+baseline. Seed 2021 is recorded in the output. Results are written to
+`results/census_published_pilot.csv`, with per-cell diagnostics in
+`results/census_published_pilot_cells.csv`.
+
+The pilot's AUC and per-cell rate comparisons are descriptive: equal AUC can
+hide different probabilities and does not establish exact reconstruction,
+individual recovery, or task-aware table-selection gains. The five-feature
+Census controls use PUMF-derived tables and are separate from this real
+published full-joint age/gender pilot.
 
 ## Known issues
 

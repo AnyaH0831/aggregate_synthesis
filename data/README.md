@@ -15,8 +15,12 @@ Run any experiment on a subset with `--datasets lanark mroz`.
 The Census loader uses `LFACT` 1 or 2 as employed, drops nonresponse codes,
 maps `Gender=1` to Woman+ and `Gender=2` to Man+, and maps `AGEGRP` 6--21
 (ages 15+) to the published-compatible 15--24, 25--34, 35--44, 45--54,
-55--64 and 65+ bands. It also collapses education, marital status and tenure
-into small integer-coded categories. The accompanying Toronto labour-status table
+55--64 and 65+ bands. Its married indicator is `MARSTH` in `{2, 3}`:
+married or living common-law; `MARSTH=1` (never married) is not included.
+Missing education and band-housing/nonresponse codes are excluded rather than
+treated as full-population categories. It also collapses education, marital
+status and tenure into small integer-coded categories. The accompanying Toronto
+labour-status table
 (`toronto-cma-98-10-0486-01-lfs-age-gender.csv`) is a published aggregate
 reference, not currently used as an input: its 75 count cells per sex column
 are multiples of 5, while its rate rows are percentages. It does not contain
@@ -25,4 +29,8 @@ all six features required by the experiments.
 The published-table pilot does use this aggregate file, but only for age,
 gender and employment-status counts; it does not use PUMF rows to construct
 fitting tables. Its synthetic-data model uses the PUMF only for a weighted
-held-out test and a separate weighted training baseline.
+held-out test and a separate weighted training baseline. It uses the official
+non-overlapping `AGEGRP` bands 6--8, 9--10, 11--12, 13--14, 15--16, 17--18
+and 19--21. The published count estimates are checked under conservative
+reported +/-5 intervals; these are not exact bounds on weighted estimates or
+the true population counts, and do not include sampling uncertainty.
