@@ -122,6 +122,20 @@ The supplied published Toronto table is a labour-status/age/gender reference
 but does not align with the loader's full feature set, so direct published-table
 evaluation is a stretch goal.
 
+The small published-table pilot uses only that Toronto CSV for fitting:
+
+```bash
+python experiments/census_published_pilot.py
+```
+
+It uses disjoint 15--24, 25--34, 35--44, 45--54, 55--64, 65--74 and 75+
+bands, checks the `Employed`, `Unemployed`, `Not in the labour force`, and
+total rows together under conservative StatCan random-rounding intervals
+`[reported - 5, reported + 5]`, and trains on the resulting synthetic rows.
+The PUMF is used only for the weighted held-out evaluation and a separate
+weighted PUMF-training baseline. Results are written to
+`results/census_published_pilot.csv`.
+
 ## Known issues
 
 - `ilp` has a time limit; if the solver finds no solution it falls back to an arbitrary rounding, which can inflate the number of contradicted

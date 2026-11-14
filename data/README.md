@@ -21,3 +21,8 @@ into small integer-coded categories. The accompanying Toronto labour-status tabl
 reference, not currently used as an input: its 75 count cells per sex column
 are multiples of 5, while its rate rows are percentages. It does not contain
 all six features required by the experiments.
+
+The published-table pilot does use this aggregate file, but only for age,
+gender and employment-status counts; it does not use PUMF rows to construct
+fitting tables. Its synthetic-data model uses the PUMF only for a weighted
+held-out test and a separate weighted training baseline.
