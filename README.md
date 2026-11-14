@@ -59,6 +59,10 @@ python -m pytest -q          # 9 tests, about a second
 
 Raw data are not included. See [`data/README.md`](data/README.md). `mroz` and `gss` need nothing; `adult` downloads itself; `lanark` and
 `gss34` need your files in `data/`.
+The Census case study uses the supplied 2021 PUMF, keeps Toronto CMA
+(`CMA=535`) persons aged 15+ (`AGEGRP` 6--21), treats `LFACT` 1 or 2 as
+employed, maps the dictionary's Woman+/Man+ gender codes explicitly, and
+ignores sampling weights for this first unweighted analysis.
 
 ## Quickstart
 
@@ -104,6 +108,19 @@ python analysis/summarize.py results
 Every script accepts `--datasets`, `--reps`, `--data-dir`, `--out-dir`, `--quick`. The saved CSVs in `results/` for E03-E08 come from the
 original runs of the same logic (before the code was consolidated into the package); E00-E02 and E09-E10 were regenerated with this code.
 Small differences from re-running are expected (random splits, solver time limits).
+
+For the Census case study, run the PUMF-built-table versions with:
+
+```bash
+python experiments/e06_table_selection_sample.py --datasets census
+python experiments/e03_rounding_all_datasets.py --datasets census
+python experiments/e04_table_selection_population.py --datasets census
+python experiments/e10_auc_certificate.py --datasets census
+```
+
+The supplied published Toronto table is a labour-status/age/gender reference
+but does not align with the loader's full feature set, so direct published-table
+evaluation is a stretch goal.
 
 ## Known issues
 

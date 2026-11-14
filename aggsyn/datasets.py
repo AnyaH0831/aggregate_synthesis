@@ -6,6 +6,7 @@ Datasets
   mroz    Mroz (1987) women's labour survey, from the ``wooldridge`` package; y = in labour force
   gss     US General Social Survey 1994-2006 (``wooldridge`` 'happiness'); y = "very happy"
   gss34   Statistics Canada GSS cycle 34 victimisation INCIDENT file (you supply the txt + SAS layout); y = police found out
+  census  2021 Canadian Census PUMF, Toronto CMA; y = employed
 """
 import os
 import re
@@ -13,9 +14,9 @@ import urllib.request
 import numpy as np
 import pandas as pd
 
-DATASETS = ["lanark", "adult", "mroz", "gss", "gss34"]
+DATASETS = ["lanark", "adult", "mroz", "gss", "gss34", "census"]
 # training-set size used in the sample-level experiments (Lanark: the paper's 80% split of 567 rows)
-TRAIN_SIZES = {"lanark": 454, "adult": 500, "mroz": 600, "gss": 500, "gss34": 500}
+TRAIN_SIZES = {"lanark": 454, "adult": 500, "mroz": 600, "gss": 500, "gss34": 500, "census": 500}
 ADULT_URL = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/adult-all.csv"
 
 
@@ -106,7 +107,49 @@ def gss34(data_dir="data", txt="GSS34PUMFI.txt", layout="GSS34PUMFI_i.SAS"):
         "y": (d.PFO_100 == "1").astype(int).values}).astype(int).reset_index(drop=True)
 
 
-_LOADERS = {"lanark": lanark, "adult": adult, "mroz": mroz, "gss": gss, "gss34": gss34}
+def census(data_dir="data", filename="data_donnees_2021_ind.csv"):
+    """Load an unweighted, integer-coded Toronto 2021 Census PUMF sample.
+
+    The PUMF's ``WEIGHT`` column is deliberately ignored: this first case study
+    treats each sampled row as one person.  We keep persons aged 15+ in CMA 535,
+    drop Census nonresponse codes, and use ``LFACT`` 1 or 2 (employed) as ``y``.
+    ``AGEGRP`` 6--21 are the 15+ codes; ``Gender=1`` is Woman+ and ``Gender=2``
+    is Man+.
+    """
+    path = os.path.join(data_dir, filename)
+    columns = ["CMA", "AGEGRP", "Gender", "HDGREE", "MARSTH", "TENUR", "LFACT"]
+    chunks = []
+    for chunk in pd.read_csv(path, usecols=columns, chunksize=250_000):
+        chunk = chunk[(chunk["CMA"] == 535) & chunk["AGEGRP"].between(6, 21)]
+        chunk = chunk[
+            chunk["Gender"].isin([1, 2])
+            & chunk["HDGREE"].between(1, 14)
+            & chunk["MARSTH"].isin([1, 2, 3, 4, 5, 6])
+            & chunk["TENUR"].isin([1, 2])
+            & chunk["LFACT"].between(1, 14)
+        ]
+        if not chunk.empty:
+            chunks.append(chunk)
+    if not chunks:
+        raise ValueError(f"No valid Toronto Census rows found in {path}")
+    d = pd.concat(chunks, ignore_index=True)
+    age = pd.cut(d["AGEGRP"], [5, 7, 9, 11, 13, 15, 21], labels=False)
+    education = np.select(
+        [d["HDGREE"].isin([1, 2]), d["HDGREE"].isin([3, 4, 5, 6])],
+        [0, 1],
+        default=2,
+    )
+    return pd.DataFrame({
+        "age": age,
+        "sex": (d["Gender"] == 2).astype(int),
+        "education": education,
+        "married": d["MARSTH"].isin([1, 2]).astype(int),
+        "tenure": (d["TENUR"] == 1).astype(int),
+        "y": d["LFACT"].isin([1, 2]).astype(int),
+    }).astype(int).reset_index(drop=True)
+
+
+_LOADERS = {"lanark": lanark, "adult": adult, "mroz": mroz, "gss": gss, "gss34": gss34, "census": census}
 
 
 def load(name, data_dir="data"):
