@@ -1,0 +1,501 @@
+data,rep,R,strategy,k,risk_used,auc_loss
+lanark,0,0,"Plain greedy (ignore risk, stop at limit)",2,0,0.07893081761006304
+lanark,0,0,Risk-aware greedy,5,0,0.02610062893081777
+lanark,0,0,Label-first,5,0,0.036163522012578664
+lanark,0,0,Random,10,0,0.0710691823899372
+lanark,0,2,"Plain greedy (ignore risk, stop at limit)",3,2,0.021383647798742245
+lanark,0,2,Risk-aware greedy,3,2,-0.03396226415094339
+lanark,0,2,Label-first,6,2,-0.06352201257861623
+lanark,0,2,Random,12,2,0.06194968553459124
+lanark,0,6,"Plain greedy (ignore risk, stop at limit)",5,6,-0.01918238993710686
+lanark,0,6,Risk-aware greedy,4,3,-0.0270440251572327
+lanark,0,6,Label-first,6,2,-0.03144654088050303
+lanark,0,6,Random,14,6,0.02955974842767295
+lanark,0,12,"Plain greedy (ignore risk, stop at limit)",4,12,0.0034591194968554007
+lanark,0,12,Risk-aware greedy,4,12,0.012578616352201366
+lanark,0,12,Label-first,6,2,-0.04842767295597472
+lanark,0,12,Random,16,12,-0.021383647798742023
+lanark,0,24,"Plain greedy (ignore risk, stop at limit)",6,16,0.016037735849056545
+lanark,0,24,Risk-aware greedy,4,12,-0.03647798742138353
+lanark,0,24,Label-first,6,2,-0.009748427672955917
+lanark,0,24,Random,19,24,-0.028301886792452824
+lanark,1,0,"Plain greedy (ignore risk, stop at limit)",2,0,0.18176100628930802
+lanark,1,0,Risk-aware greedy,4,0,0.10754716981132062
+lanark,1,0,Label-first,5,0,0.14088050314465395
+lanark,1,0,Random,10,0,0.20314465408805027
+lanark,1,2,"Plain greedy (ignore risk, stop at limit)",3,2,0.028301886792452713
+lanark,1,2,Risk-aware greedy,3,2,0.005974842767295319
+lanark,1,2,Label-first,6,2,0.011006289308175932
+lanark,1,2,Random,11,2,0.18805031446540876
+lanark,1,6,"Plain greedy (ignore risk, stop at limit)",5,6,0.05125786163521995
+lanark,1,6,Risk-aware greedy,3,2,0.013522012578616183
+lanark,1,6,Label-first,6,2,-0.005345911949685589
+lanark,1,6,Random,13,6,0.15157232704402512
+lanark,1,12,"Plain greedy (ignore risk, stop at limit)",5,12,0.011006289308176043
+lanark,1,12,Risk-aware greedy,5,12,0.005345911949685367
+lanark,1,12,Label-first,6,2,0.011949685534591081
+lanark,1,12,Random,16,12,0.19339622641509435
+lanark,1,24,"Plain greedy (ignore risk, stop at limit)",6,15,0.023584905660377187
+lanark,1,24,Risk-aware greedy,6,15,0.025471698113207375
+lanark,1,24,Label-first,6,2,0.023899371069182274
+lanark,1,24,Random,19,24,-0.018238993710692042
+lanark,2,0,"Plain greedy (ignore risk, stop at limit)",2,0,0.09842767295597488
+lanark,2,0,Risk-aware greedy,4,0,0.041194968553459055
+lanark,2,0,Label-first,5,0,0.1188679245283018
+lanark,2,0,Random,11,0,0.016666666666666607
+lanark,2,2,"Plain greedy (ignore risk, stop at limit)",3,2,-0.06918238993710701
+lanark,2,2,Risk-aware greedy,3,2,-0.06006289308176105
+lanark,2,2,Label-first,6,2,-0.02358490566037741
+lanark,2,2,Random,12,2,0.15283018867924525
+lanark,2,6,"Plain greedy (ignore risk, stop at limit)",5,6,-0.05157232704402526
+lanark,2,6,Risk-aware greedy,3,2,-0.024842767295597534
+lanark,2,6,Label-first,6,2,-0.03490566037735865
+lanark,2,6,Random,15,6,0.043710691823899195
+lanark,2,12,"Plain greedy (ignore risk, stop at limit)",5,12,-0.00880503144654099
+lanark,2,12,Risk-aware greedy,4,11,-0.060377358490566135
+lanark,2,12,Label-first,6,2,-0.012578616352201366
+lanark,2,12,Random,19,12,-0.035220125786163625
+lanark,2,24,"Plain greedy (ignore risk, stop at limit)",6,15,-0.037106918238993813
+lanark,2,24,Risk-aware greedy,4,11,-0.030503144654087988
+lanark,2,24,Label-first,6,2,-0.02075471698113207
+lanark,2,24,Random,21,24,-0.03805031446540885
+lanark,3,0,"Plain greedy (ignore risk, stop at limit)",3,0,0.1490566037735851
+lanark,3,0,Risk-aware greedy,6,0,0.10471698113207561
+lanark,3,0,Label-first,5,0,0.10471698113207561
+lanark,3,0,Random,12,0,0.06981132075471719
+lanark,3,2,"Plain greedy (ignore risk, stop at limit)",4,2,-0.01383647798742127
+lanark,3,2,Risk-aware greedy,4,2,-0.019496855345911834
+lanark,3,2,Label-first,6,2,0.01666666666666683
+lanark,3,2,Random,14,2,0.09842767295597488
+lanark,3,6,"Plain greedy (ignore risk, stop at limit)",5,3,0.004088050314465463
+lanark,3,6,Risk-aware greedy,5,3,0.0037735849056604875
+lanark,3,6,Label-first,6,2,0.0003144654088050869
+lanark,3,6,Random,15,6,-0.004088050314465352
+lanark,3,12,"Plain greedy (ignore risk, stop at limit)",6,12,-0.0062893081761005165
+lanark,3,12,Risk-aware greedy,6,12,0.016037735849056767
+lanark,3,12,Label-first,6,2,0.028616352201258022
+lanark,3,12,Random,18,12,-0.010062893081761004
+lanark,3,24,"Plain greedy (ignore risk, stop at limit)",6,12,-0.008805031446540657
+lanark,3,24,Risk-aware greedy,6,12,0.0034591194968555117
+lanark,3,24,Label-first,6,2,0.03396226415094361
+lanark,3,24,Random,21,23,0.010062893081761115
+lanark,4,0,"Plain greedy (ignore risk, stop at limit)",3,0,0.038679245283018915
+lanark,4,0,Risk-aware greedy,4,0,-0.022012578616352085
+lanark,4,0,Label-first,5,0,0.07924528301886802
+lanark,4,0,Random,10,0,0.02169811320754733
+lanark,4,2,"Plain greedy (ignore risk, stop at limit)",4,2,-0.023899371069182274
+lanark,4,2,Risk-aware greedy,4,2,-0.01132075471698113
+lanark,4,2,Label-first,6,2,-0.010691823899370956
+lanark,4,2,Random,12,2,-0.03805031446540863
+lanark,4,6,"Plain greedy (ignore risk, stop at limit)",5,4,0.0088050314465411
+lanark,4,6,Risk-aware greedy,6,5,-0.03459119496855345
+lanark,4,6,Label-first,6,2,1.1102230246251565e-16
+lanark,4,6,Random,14,6,0.018553459119496907
+lanark,4,12,"Plain greedy (ignore risk, stop at limit)",5,12,-0.023270440251572322
+lanark,4,12,Risk-aware greedy,6,5,-0.03301886792452835
+lanark,4,12,Label-first,6,2,0.01572327044025157
+lanark,4,12,Random,16,12,-0.018553459119496796
+lanark,4,24,"Plain greedy (ignore risk, stop at limit)",6,14,-0.02955974842767295
+lanark,4,24,Risk-aware greedy,6,13,-0.00251572327044014
+lanark,4,24,Label-first,6,2,0.002830188679245338
+lanark,4,24,Random,18,24,0.002201257861635386
+adult,0,0,"Plain greedy (ignore risk, stop at limit)",3,0,0.08307537003898746
+adult,0,0,Risk-aware greedy,3,0,0.04269394241966307
+adult,0,0,Label-first,4,0,0.09652201191839249
+adult,0,0,Random,15,0,0.06800526831030795
+adult,0,2,"Plain greedy (ignore risk, stop at limit)",4,1,0.04444557015177519
+adult,0,2,Risk-aware greedy,6,1,0.02257158481418098
+adult,0,2,Label-first,5,1,0.03278717539957876
+adult,0,2,Random,17,2,0.006966229593841966
+adult,0,6,"Plain greedy (ignore risk, stop at limit)",6,5,0.0024687575527502226
+adult,0,6,Risk-aware greedy,6,3,0.005232301236026693
+adult,0,6,Label-first,6,3,0.0149022628344877
+adult,0,6,Random,19,6,0.006938154724268286
+adult,0,12,"Plain greedy (ignore risk, stop at limit)",6,5,0.009218932715523431
+adult,0,12,Risk-aware greedy,6,3,0.001470268713121281
+adult,0,12,Label-first,6,3,0.011056616026112076
+adult,0,12,Random,21,12,0.0024852362805436456
+adult,0,24,"Plain greedy (ignore risk, stop at limit)",6,5,0.0058218734970790775
+adult,0,24,Risk-aware greedy,6,3,0.00614534482043072
+adult,0,24,Label-first,6,3,0.01368039568477053
+adult,0,24,Random,21,12,0.006915572763958711
+adult,1,0,"Plain greedy (ignore risk, stop at limit)",3,0,0.06507083411658143
+adult,1,0,Risk-aware greedy,6,0,0.0651355283812517
+adult,1,0,Label-first,4,0,0.07036966058703342
+adult,1,0,Random,15,0,0.048343704759788886
+adult,1,2,"Plain greedy (ignore risk, stop at limit)",5,2,0.0046836206328320085
+adult,1,2,Risk-aware greedy,6,2,0.005566148054655717
+adult,1,2,Label-first,6,2,0.015990469192102896
+adult,1,2,Random,16,2,0.06325085018028942
+adult,1,6,"Plain greedy (ignore risk, stop at limit)",6,6,0.005647321047119402
+adult,1,6,Risk-aware greedy,6,2,0.004548739194226825
+adult,1,6,Label-first,6,2,0.015056674617144217
+adult,1,6,Random,17,6,0.060053976988372004
+adult,1,12,"Plain greedy (ignore risk, stop at limit)",6,6,0.00878194126737275
+adult,1,12,Risk-aware greedy,6,2,0.0031321789272470424
+adult,1,12,Label-first,6,2,0.006759330011547382
+adult,1,12,Random,21,11,0.010321786831177349
+adult,1,24,"Plain greedy (ignore risk, stop at limit)",6,6,-0.0015343526545400499
+adult,1,24,Risk-aware greedy,6,2,0.0017259941555445302
+adult,1,24,Label-first,6,2,0.0034892180294371355
+adult,1,24,Random,21,11,0.005600936479997154
+adult,2,0,"Plain greedy (ignore risk, stop at limit)",3,0,0.06755240845761545
+adult,2,0,Risk-aware greedy,6,0,0.026510611080052482
+adult,2,0,Label-first,5,0,0.04083428747201656
+adult,2,0,Random,17,0,0.051734050422465816
+adult,2,2,"Plain greedy (ignore risk, stop at limit)",4,1,0.006847826883030428
+adult,2,2,Risk-aware greedy,6,1,0.008244856805958767
+adult,2,2,Label-first,6,1,0.011003517903222182
+adult,2,2,Random,18,1,0.007665660040183764
+adult,2,6,"Plain greedy (ignore risk, stop at limit)",6,6,0.01999846198540589
+adult,2,6,Risk-aware greedy,6,4,0.015686528212802586
+adult,2,6,Label-first,6,1,0.014328558977977024
+adult,2,6,Random,20,6,0.001304260788684175
+adult,2,12,"Plain greedy (ignore risk, stop at limit)",6,6,0.006383370888557338
+adult,2,12,Risk-aware greedy,6,4,0.015798827691098305
+adult,2,12,Label-first,6,1,0.0121326159186953
+adult,2,12,Random,21,8,0.018597159799716434
+adult,2,24,"Plain greedy (ignore risk, stop at limit)",6,6,0.01404292769622495
+adult,2,24,Risk-aware greedy,6,4,0.00558995066146839
+adult,2,24,Label-first,6,1,0.009267758575652096
+adult,2,24,Random,21,8,0.017085389105485738
+adult,3,0,"Plain greedy (ignore risk, stop at limit)",3,0,0.015156767630407741
+adult,3,0,Risk-aware greedy,5,0,0.016702106103476666
+adult,3,0,Label-first,5,0,0.009763341055956776
+adult,3,0,Random,16,0,0.014767991719134343
+adult,3,2,"Plain greedy (ignore risk, stop at limit)",4,2,0.010897321657442727
+adult,3,2,Risk-aware greedy,6,2,-0.003381190813902535
+adult,3,2,Label-first,6,2,0.0020226112558255904
+adult,3,2,Random,18,2,0.009107243560479428
+adult,3,6,"Plain greedy (ignore risk, stop at limit)",6,4,0.011259243345645542
+adult,3,6,Risk-aware greedy,6,2,-0.00586032386193025
+adult,3,6,Label-first,6,2,0.0012035574521688241
+adult,3,6,Random,21,6,0.009420339388553689
+adult,3,12,"Plain greedy (ignore risk, stop at limit)",6,4,-0.000615816160871363
+adult,3,12,Risk-aware greedy,6,2,-0.0005260986428851089
+adult,3,12,Label-first,6,2,-0.0006310742421615778
+adult,3,12,Random,21,6,0.0072353821478008395
+adult,3,24,"Plain greedy (ignore risk, stop at limit)",6,4,0.01277284500963094
+adult,3,24,Risk-aware greedy,6,2,0.002494391129317819
+adult,3,24,Label-first,6,2,-0.0018382936338401379
+adult,3,24,Random,21,6,-0.00033995005114506593
+adult,4,0,"Plain greedy (ignore risk, stop at limit)",4,0,0.010898542303946046
+adult,4,0,Risk-aware greedy,5,0,0.0063076908053583125
+adult,4,0,Label-first,5,0,0.006443792890466593
+adult,4,0,Random,18,0,0.033340128265534674
+adult,4,2,"Plain greedy (ignore risk, stop at limit)",5,1,0.010388922388854138
+adult,4,2,Risk-aware greedy,6,1,0.014393863565899112
+adult,4,2,Label-first,6,1,-0.009972071608006283
+adult,4,2,Random,20,2,0.014268136976068213
+adult,4,6,"Plain greedy (ignore risk, stop at limit)",6,4,0.001227360058981719
+adult,4,6,Risk-aware greedy,6,4,-0.0005499012496977818
+adult,4,6,Label-first,6,1,-0.0050522558768024695
+adult,4,6,Random,21,5,0.010554930313291244
+adult,4,12,"Plain greedy (ignore risk, stop at limit)",6,4,0.0012218671497172817
+adult,4,12,Risk-aware greedy,6,4,-0.0015911127169392358
+adult,4,12,Label-first,6,1,0.015182401206975449
+adult,4,12,Random,21,5,-0.01068614981238647
+adult,4,24,"Plain greedy (ignore risk, stop at limit)",6,4,0.001810218764266569
+adult,4,24,Risk-aware greedy,6,4,0.004844745971256281
+adult,4,24,Label-first,6,1,0.008066032093237863
+adult,4,24,Random,21,5,-0.0031578125038143057
+mroz,0,0,"Plain greedy (ignore risk, stop at limit)",4,0,0.02002786485545094
+mroz,0,0,Risk-aware greedy,6,0,0.01724137931034475
+mroz,0,0,Label-first,5,0,0.01567398119122243
+mroz,0,0,Random,11,0,0.0449320794148379
+mroz,0,2,"Plain greedy (ignore risk, stop at limit)",5,1,0.01097178683385569
+mroz,0,2,Risk-aware greedy,6,1,0.023859282479972044
+mroz,0,2,Label-first,5,0,0.07488679902473006
+mroz,0,2,Random,12,1,0.018460466736328618
+mroz,0,6,"Plain greedy (ignore risk, stop at limit)",6,4,0.003831417624520994
+mroz,0,6,Risk-aware greedy,6,4,0.04806687565308254
+mroz,0,6,Label-first,5,0,0.0982236154649947
+mroz,0,6,Random,14,6,0.00940438871473348
+mroz,0,12,"Plain greedy (ignore risk, stop at limit)",6,4,0.016544757924068176
+mroz,0,12,Risk-aware greedy,6,4,0.03134796238244508
+mroz,0,12,Label-first,5,0,0.06809474050853359
+mroz,0,12,Random,15,8,-0.01062347614071768
+mroz,0,24,"Plain greedy (ignore risk, stop at limit)",6,4,0.06130268199233713
+mroz,0,24,Risk-aware greedy,6,4,-0.0005224660397076253
+mroz,0,24,Label-first,5,0,0.06078021595262961
+mroz,0,24,Random,15,8,0.029083942877046298
+mroz,1,0,"Plain greedy (ignore risk, stop at limit)",3,0,0.08899338209683039
+mroz,1,0,Risk-aware greedy,3,0,0.05607802159526298
+mroz,1,0,Label-first,4,0,0.11668408220132354
+mroz,1,0,Random,9,0,0.08881922675026122
+mroz,1,2,"Plain greedy (ignore risk, stop at limit)",4,1,0.03065134099616873
+mroz,1,2,Risk-aware greedy,6,2,0.027168234064785746
+mroz,1,2,Label-first,5,1,0.05764541971438519
+mroz,1,2,Random,10,2,0.08272378962034133
+mroz,1,6,"Plain greedy (ignore risk, stop at limit)",6,6,0.027342389411354917
+mroz,1,6,Risk-aware greedy,5,6,0.011494252873563315
+mroz,1,6,Label-first,5,1,0.07506095437129923
+mroz,1,6,Random,12,6,0.07349355625217702
+mroz,1,12,"Plain greedy (ignore risk, stop at limit)",6,6,0.009752699407871823
+mroz,1,12,Risk-aware greedy,5,6,0.023510971786833812
+mroz,1,12,Label-first,5,1,0.08045977011494254
+mroz,1,12,Random,15,11,0.007488679902472928
+mroz,1,24,"Plain greedy (ignore risk, stop at limit)",6,6,0.03396029258098221
+mroz,1,24,Risk-aware greedy,5,6,0.042493904562870055
+mroz,1,24,Label-first,5,1,0.05451062347614066
+mroz,1,24,Random,15,11,0.006443747823058232
+mroz,2,0,"Plain greedy (ignore risk, stop at limit)",4,0,0.03901079763148729
+mroz,2,0,Risk-aware greedy,6,0,0.05363984674329492
+mroz,2,0,Label-first,5,0,0.0400557297109021
+mroz,2,0,Random,11,0,0.042319749216300884
+mroz,2,2,"Plain greedy (ignore risk, stop at limit)",5,2,0.008185301288749502
+mroz,2,2,Risk-aware greedy,5,2,0.028735632183907955
+mroz,2,2,Label-first,5,0,0.031696273075583425
+mroz,2,2,Random,12,2,0.002960640891675359
+mroz,2,6,"Plain greedy (ignore risk, stop at limit)",6,3,0.010971786833855801
+mroz,2,6,Risk-aware greedy,5,3,-0.002089864158829724
+mroz,2,6,Label-first,5,0,0.03430860327412044
+mroz,2,6,Random,14,6,0.0010449320794148065
+mroz,2,12,"Plain greedy (ignore risk, stop at limit)",6,3,0.03448275862068961
+mroz,2,12,Risk-aware greedy,5,3,0.005921281783350607
+mroz,2,12,Label-first,5,0,0.031522117729014254
+mroz,2,12,Random,15,7,0.011842563566701436
+mroz,2,24,"Plain greedy (ignore risk, stop at limit)",6,3,0.005398815743643204
+mroz,2,24,Risk-aware greedy,5,3,0.018112156043190497
+mroz,2,24,Label-first,5,0,0.023685127133402983
+mroz,2,24,Random,15,7,-0.0013932427725531493
+mroz,3,0,"Plain greedy (ignore risk, stop at limit)",5,0,0.017763845350052265
+mroz,3,0,Risk-aware greedy,5,0,0.007488679902473039
+mroz,3,0,Label-first,5,0,-0.018982932776036243
+mroz,3,0,Random,10,0,-0.016022291884360884
+mroz,3,2,"Plain greedy (ignore risk, stop at limit)",5,0,0.03082549634273768
+mroz,3,2,Risk-aware greedy,6,1,-0.026994078718216685
+mroz,3,2,Label-first,5,0,0.03657262277951934
+mroz,3,2,Random,11,2,0.014280738418669503
+mroz,3,6,"Plain greedy (ignore risk, stop at limit)",6,3,0.02803901079763149
+mroz,3,6,Risk-aware greedy,6,3,0.04458376872169956
+mroz,3,6,Label-first,5,0,0.04806687565308265
+mroz,3,6,Random,14,6,0.021421107628004088
+mroz,3,12,"Plain greedy (ignore risk, stop at limit)",6,3,0.029954719609892044
+mroz,3,12,Risk-aware greedy,6,3,0.010971786833855801
+mroz,3,12,Label-first,5,0,-0.003308951584813702
+mroz,3,12,Random,15,9,0.02298850574712641
+mroz,3,24,"Plain greedy (ignore risk, stop at limit)",6,3,-0.002960640891675248
+mroz,3,24,Risk-aware greedy,6,3,0.007662835249042099
+mroz,3,24,Label-first,5,0,0.008533611981887734
+mroz,3,24,Random,15,9,0.0019157088122604415
+mroz,4,0,"Plain greedy (ignore risk, stop at limit)",4,0,0.11407175200278641
+mroz,4,0,Risk-aware greedy,5,0,0.08133054684778829
+mroz,4,0,Label-first,4,0,0.060780215952629724
+mroz,4,0,Random,9,0,0.09857192615813304
+mroz,4,2,"Plain greedy (ignore risk, stop at limit)",5,1,0.014280738418669392
+mroz,4,2,Risk-aware greedy,6,2,0.018982932776036243
+mroz,4,2,Label-first,5,1,0.013758272378961989
+mroz,4,2,Random,11,2,0.020550330895158342
+mroz,4,6,"Plain greedy (ignore risk, stop at limit)",6,4,0.025949146638801768
+mroz,4,6,Risk-aware greedy,6,4,-0.00017415534656917142
+mroz,4,6,Label-first,5,1,0.0006966213862765747
+mroz,4,6,Random,12,6,0.0724486241727621
+mroz,4,12,"Plain greedy (ignore risk, stop at limit)",6,4,0.014977359804946078
+mroz,4,12,Risk-aware greedy,6,4,0.017589690003483094
+mroz,4,12,Label-first,5,1,0.005747126436781547
+mroz,4,12,Random,15,11,0.015151515151515249
+mroz,4,24,"Plain greedy (ignore risk, stop at limit)",6,4,-0.002089864158829724
+mroz,4,24,Risk-aware greedy,6,4,0.019157088122605304
+mroz,4,24,Label-first,5,1,0.01253918495297801
+mroz,4,24,Random,15,11,-0.00034831069313834284
+gss,0,0,"Plain greedy (ignore risk, stop at limit)",5,0,-0.0064846537986231745
+gss,0,0,Risk-aware greedy,6,0,-0.015627490581499814
+gss,0,0,Label-first,6,0,0.005155562306496386
+gss,0,0,Random,18,0,0.004235746607183399
+gss,0,2,"Plain greedy (ignore risk, stop at limit)",5,0,-0.008476181367778168
+gss,0,2,Risk-aware greedy,6,0,-0.00800924128800451
+gss,0,2,Label-first,6,0,0.006606545787319118
+gss,0,2,Random,19,2,0.003620192064269001
+gss,0,6,"Plain greedy (ignore risk, stop at limit)",6,3,0.0069919119977347455
+gss,0,6,Risk-aware greedy,6,0,0.003991962629791623
+gss,0,6,Label-first,6,0,-0.005295738093496705
+gss,0,6,Random,21,6,0.0021129507425098337
+gss,0,12,"Plain greedy (ignore risk, stop at limit)",6,3,0.014368721390543904
+gss,0,12,Risk-aware greedy,6,0,0.015660776470720617
+gss,0,12,Label-first,6,0,0.002143423739683681
+gss,0,12,Random,21,6,-0.012603162815817415
+gss,0,24,"Plain greedy (ignore risk, stop at limit)",6,3,0.012973995750657719
+gss,0,24,Risk-aware greedy,6,0,0.011797738059742158
+gss,0,24,Label-first,6,0,-0.00719303377908298
+gss,0,24,Random,21,6,0.006753284989095332
+gss,1,0,"Plain greedy (ignore risk, stop at limit)",5,0,0.019797603040923928
+gss,1,0,Risk-aware greedy,6,0,0.0013136205858691463
+gss,1,0,Label-first,6,0,-0.0010318625658450875
+gss,1,0,Random,17,0,0.0018499453361313645
+gss,1,2,"Plain greedy (ignore risk, stop at limit)",5,0,0.008252556450055293
+gss,1,2,Risk-aware greedy,6,0,0.0010177981056109786
+gss,1,2,Label-first,6,0,-0.002849928458778961
+gss,1,2,Random,19,2,9.376306823183356e-07
+gss,1,6,"Plain greedy (ignore risk, stop at limit)",6,3,0.0069347165261157695
+gss,1,6,Risk-aware greedy,6,3,0.013585799770843066
+gss,1,6,Label-first,6,0,-0.00311996609527454
+gss,1,6,Random,21,6,0.011854933531361023
+gss,1,12,"Plain greedy (ignore risk, stop at limit)",6,3,0.013991325040927705
+gss,1,12,Risk-aware greedy,6,3,0.006111007971736138
+gss,1,12,Label-first,6,0,-0.007775302432776465
+gss,1,12,Random,21,6,-0.0027388192229291786
+gss,1,24,"Plain greedy (ignore risk, stop at limit)",6,3,0.011952915937658903
+gss,1,24,Risk-aware greedy,6,3,0.010594289079040364
+gss,1,24,Label-first,6,0,-0.004602360203953326
+gss,1,24,Random,21,6,0.007896725606131416
+gss,2,0,"Plain greedy (ignore risk, stop at limit)",4,0,0.0021115442964863007
+gss,2,0,Risk-aware greedy,3,0,0.014823003456106765
+gss,2,0,Label-first,6,0,-0.01670764112748213
+gss,2,0,Random,18,0,-0.003068396407749252
+gss,2,2,"Plain greedy (ignore risk, stop at limit)",5,1,0.01250564922486086
+gss,2,2,Risk-aware greedy,3,0,0.02034986751278456
+gss,2,2,Label-first,6,0,0.0033604683652783685
+gss,2,2,Random,20,2,0.014658449271367169
+gss,2,6,"Plain greedy (ignore risk, stop at limit)",6,5,0.013912095248275302
+gss,2,6,Risk-aware greedy,3,0,-0.0076520039980571
+gss,2,6,Label-first,6,0,0.00234501433637313
+gss,2,6,Random,21,6,0.024770796179717558
+gss,2,12,"Plain greedy (ignore risk, stop at limit)",6,5,0.0022915693874834275
+gss,2,12,Risk-aware greedy,3,0,0.0347734402982417
+gss,2,12,Label-first,6,0,-0.010140007013477503
+gss,2,12,Random,21,6,0.01994293579667672
+gss,2,24,"Plain greedy (ignore risk, stop at limit)",6,5,-0.006825482551630513
+gss,2,24,Risk-aware greedy,3,0,-0.01124734884924583
+gss,2,24,Label-first,6,0,0.014250111109235797
+gss,2,24,Random,21,6,-0.007013477503427068
+gss,3,0,"Plain greedy (ignore risk, stop at limit)",4,0,0.028718221352100892
+gss,3,0,Risk-aware greedy,5,0,0.03264220575742749
+gss,3,0,Label-first,5,0,0.0543657022197469
+gss,3,0,Random,15,0,0.03354561291980074
+gss,3,2,"Plain greedy (ignore risk, stop at limit)",6,2,0.008937964478799243
+gss,3,2,Risk-aware greedy,6,2,0.00030941812515117295
+gss,3,2,Label-first,6,1,0.0033698446721012187
+gss,3,2,Random,17,2,0.012239830926435324
+gss,3,6,"Plain greedy (ignore risk, stop at limit)",6,2,-0.0005288237048037825
+gss,3,6,Risk-aware greedy,6,2,-0.012988997841574146
+gss,3,6,Label-first,6,1,0.023240582906242535
+gss,3,6,Random,20,6,0.0011153116965677556
+gss,3,12,"Plain greedy (ignore risk, stop at limit)",6,2,-0.006902368267577286
+gss,3,12,Risk-aware greedy,6,2,0.008417579450135881
+gss,3,12,Label-first,6,1,0.0071925649637418765
+gss,3,12,Random,21,8,0.0030388610412576122
+gss,3,24,"Plain greedy (ignore risk, stop at limit)",6,2,-0.006064595252963434
+gss,3,24,Risk-aware greedy,6,2,0.0011289073414607609
+gss,3,24,Label-first,6,1,0.006838140565841311
+gss,3,24,Random,21,8,0.005345901334998571
+gss,4,0,"Plain greedy (ignore risk, stop at limit)",4,0,0.018726359986423136
+gss,4,0,Risk-aware greedy,6,0,0.020525204450370316
+gss,4,0,Label-first,6,0,-0.007285390401287284
+gss,4,0,Random,17,0,0.0029169690525617797
+gss,4,2,"Plain greedy (ignore risk, stop at limit)",5,1,0.01951256331351181
+gss,4,2,Risk-aware greedy,6,0,0.014969273842541764
+gss,4,2,Label-first,6,0,-0.003660978998948017
+gss,4,2,Random,18,2,0.004432180235120264
+gss,4,6,"Plain greedy (ignore risk, stop at limit)",6,3,0.006404486375288565
+gss,4,6,Risk-aware greedy,6,0,0.004235277791842185
+gss,4,6,Label-first,6,0,-0.008027993901650099
+gss,4,6,Random,20,4,-0.0006099287588208213
+gss,4,12,"Plain greedy (ignore risk, stop at limit)",6,3,0.007111928725066052
+gss,4,12,Risk-aware greedy,6,0,0.007779990586187946
+gss,4,12,Label-first,6,0,-0.007422753296240758
+gss,4,12,Random,21,8,0.008504310288246386
+gss,4,24,"Plain greedy (ignore risk, stop at limit)",6,3,0.015676247376978036
+gss,4,24,Risk-aware greedy,6,0,0.005908010929023155
+gss,4,24,Label-first,6,0,-0.0005939890372220757
+gss,4,24,Random,21,8,9.845122163842923e-06
+gss34,0,0,"Plain greedy (ignore risk, stop at limit)",5,0,0.012482007391558136
+gss34,0,0,Risk-aware greedy,5,0,0.04386208908772615
+gss34,0,0,Label-first,6,0,0.006462264150943531
+gss34,0,0,Random,9,0,0.017083252285547634
+gss34,0,2,"Plain greedy (ignore risk, stop at limit)",6,2,0.012295273293133735
+gss34,0,2,Risk-aware greedy,6,2,0.032093950593269804
+gss34,0,2,Label-first,6,0,0.003894670297607483
+gss34,0,2,Random,10,2,0.008210951176813919
+gss34,0,6,"Plain greedy (ignore risk, stop at limit)",6,2,0.02177251507488831
+gss34,0,6,Risk-aware greedy,6,2,0.02569149970822804
+gss34,0,6,Label-first,6,0,0.01092005446411215
+gss34,0,6,Random,12,6,0.005531997665823796
+gss34,0,12,"Plain greedy (ignore risk, stop at limit)",6,2,0.030157070608830994
+gss34,0,12,Risk-aware greedy,6,2,0.01648852363353448
+gss34,0,12,Label-first,6,0,0.010585002917720354
+gss34,0,12,Random,14,12,0.013968099591519234
+gss34,0,24,"Plain greedy (ignore risk, stop at limit)",6,2,0.034556992802956765
+gss34,0,24,Risk-aware greedy,6,2,0.025316572651235214
+gss34,0,24,Label-first,6,0,0.01306117486870273
+gss34,0,24,Random,21,24,0.015354989301692323
+gss34,1,0,"Plain greedy (ignore risk, stop at limit)",5,0,0.01816864423263942
+gss34,1,0,Risk-aware greedy,6,0,0.012396420929779994
+gss34,1,0,Label-first,6,0,0.01928904882318616
+gss34,1,0,Random,10,0,0.013245477533553762
+gss34,1,2,"Plain greedy (ignore risk, stop at limit)",6,2,0.012961486092199825
+gss34,1,2,Risk-aware greedy,6,0,8.3641314919225e-05
+gss34,1,2,Label-first,6,0,0.03211340206185542
+gss34,1,2,Random,12,2,0.016380081696168003
+gss34,1,6,"Plain greedy (ignore risk, stop at limit)",6,2,0.016178758996304166
+gss34,1,6,Risk-aware greedy,6,0,0.05771785644816174
+gss34,1,6,Label-first,6,0,0.05126531803151124
+gss34,1,6,Random,13,6,0.009343512935226506
+gss34,1,12,"Plain greedy (ignore risk, stop at limit)",6,2,0.014794787006418897
+gss34,1,12,Risk-aware greedy,6,0,0.04711631978214348
+gss34,1,12,Label-first,6,0,0.053370939505932524
+gss34,1,12,Random,16,12,0.004362964403812342
+gss34,1,24,"Plain greedy (ignore risk, stop at limit)",6,2,-0.0020414316280880085
+gss34,1,24,Risk-aware greedy,6,0,0.004906632950787526
+gss34,1,24,Label-first,6,0,0.0422957595798481
+gss34,1,24,Random,21,21,0.015065648706477086
+gss34,2,0,"Plain greedy (ignore risk, stop at limit)",3,0,0.1403958373857226
+gss34,2,0,Risk-aware greedy,5,0,0.09152985800427937
+gss34,2,0,Label-first,5,0,0.08802616222524806
+gss34,2,0,Random,9,0,0.08189651818712307
+gss34,2,2,"Plain greedy (ignore risk, stop at limit)",5,2,-0.005088017895351293
+gss34,2,2,Risk-aware greedy,6,2,-0.010879206380081774
+gss34,2,2,Label-first,6,1,0.008637910912273838
+gss34,2,2,Random,11,2,0.08098764831744798
+gss34,2,6,"Plain greedy (ignore risk, stop at limit)",6,3,-0.013976852752382696
+gss34,2,6,Risk-aware greedy,6,2,-0.006206477339039118
+gss34,2,6,Label-first,6,1,0.009704337677494568
+gss34,2,6,Random,12,6,0.06986335343318428
+gss34,2,12,"Plain greedy (ignore risk, stop at limit)",6,3,-0.0013645205212993172
+gss34,2,12,Risk-aware greedy,6,2,-0.004647928418595626
+gss34,2,12,Label-first,6,1,0.0010776113596575598
+gss34,2,12,Random,15,12,0.05795516436490966
+gss34,2,24,"Plain greedy (ignore risk, stop at limit)",6,3,-0.007192180509628554
+gss34,2,24,Risk-aware greedy,6,2,-0.0029989301692279202
+gss34,2,24,Label-first,6,1,0.012251507488815427
+gss34,2,24,Random,21,21,0.0029556506516242864
+gss34,3,0,"Plain greedy (ignore risk, stop at limit)",4,0,0.05535644816183605
+gss34,3,0,Risk-aware greedy,6,0,0.07660377358490555
+gss34,3,0,Label-first,5,0,0.1315347208714257
+gss34,3,0,Random,7,0,0.08941694222913821
+gss34,3,2,"Plain greedy (ignore risk, stop at limit)",5,1,0.026942715425014585
+gss34,3,2,Risk-aware greedy,6,1,0.015899630422096855
+gss34,3,2,Label-first,6,1,0.02729041042598712
+gss34,3,2,Random,8,2,0.12311028982688177
+gss34,3,6,"Plain greedy (ignore risk, stop at limit)",6,3,0.020325812098813345
+gss34,3,6,Risk-aware greedy,6,1,0.018465279128574097
+gss34,3,6,Label-first,6,1,0.015670103092783494
+gss34,3,6,Random,11,6,0.06007051157362375
+gss34,3,12,"Plain greedy (ignore risk, stop at limit)",6,3,0.024335246061077398
+gss34,3,12,Risk-aware greedy,6,1,0.017772806846916733
+gss34,3,12,Label-first,6,1,0.044977144524411594
+gss34,3,12,Random,14,12,0.07333252285547553
+gss34,3,24,"Plain greedy (ignore risk, stop at limit)",6,3,0.0244028399144135
+gss34,3,24,Risk-aware greedy,6,1,0.016327562730986123
+gss34,3,24,Label-first,6,1,0.055945827659988345
+gss34,3,24,Random,21,24,0.012070608830966667
+gss34,4,0,"Plain greedy (ignore risk, stop at limit)",3,0,0.08452392530636055
+gss34,4,0,Risk-aware greedy,6,0,0.09166601828438037
+gss34,4,0,Label-first,5,0,0.08131054269597349
+gss34,4,0,Random,8,0,0.07593269791869284
+gss34,4,2,"Plain greedy (ignore risk, stop at limit)",5,2,0.005439116903326213
+gss34,4,2,Risk-aware greedy,6,1,-0.0011340206185567192
+gss34,4,2,Label-first,6,1,0.003052421707839037
+gss34,4,2,Random,10,2,0.12166115541723399
+gss34,4,6,"Plain greedy (ignore risk, stop at limit)",6,3,-1.945146858695068e-06
+gss34,4,6,Risk-aware greedy,6,1,-0.0003262983855282231
+gss34,4,6,Label-first,6,1,0.015465862672631836
+gss34,4,6,Random,11,6,0.13265318031511397
+gss34,4,12,"Plain greedy (ignore risk, stop at limit)",6,3,0.005735751799260891
+gss34,4,12,Risk-aware greedy,6,1,0.010809181093172637
+gss34,4,12,Label-first,6,1,-0.003192958568371984
+gss34,4,12,Random,16,12,0.008827076444271609
+gss34,4,24,"Plain greedy (ignore risk, stop at limit)",6,3,0.006045030149776309
+gss34,4,24,Risk-aware greedy,6,1,-0.010733320365687637
+gss34,4,24,Label-first,6,1,0.015278156000778087
+gss34,4,24,Random,21,20,0.03168595603968094

@@ -1,0 +1,9 @@
+[project]
+name = "aggsyn"
+version = "0.1.0"
+description = "Rebuilding person-level data from published aggregate tables, and choosing which tables to publish"
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "scipy", "scikit-learn", "xgboost", "wooldridge"]
+
+[tool.setuptools]
+packages = ["aggsyn"]

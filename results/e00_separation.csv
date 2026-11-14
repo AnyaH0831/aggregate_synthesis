@@ -1,0 +1,9 @@
+m,table,joint_KL_left,cond_KL_left,auc_of_implied_posterior
+2,"pair(X2,X3)  [what joint-KL-greedy picks]",0.3680642071684971,0.36806420716849714,0.5
+2,"pair(X1,Y)   [task-aware]",0.6931471805599453,0.0,0.9
+4,"pair(X2,X3)  [what joint-KL-greedy picks]",0.3680642071684971,0.36806420716849714,0.5
+4,"pair(X1,Y)   [task-aware]",1.3862943611198906,5.620504062164856e-17,0.9
+8,"pair(X2,X3)  [what joint-KL-greedy picks]",0.3680642071684972,0.36806420716849714,0.5
+8,"pair(X1,Y)   [task-aware]",2.079441541679836,4.3021142204224823e-17,0.9000000000000002
+16,"pair(X2,X3)  [what joint-KL-greedy picks]",0.3680642071684971,0.368064207168497,0.5
+16,"pair(X1,Y)   [task-aware]",2.7725887222397834,2.0122792321330952e-17,0.9000000000000002
